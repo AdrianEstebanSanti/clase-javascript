@@ -29,7 +29,6 @@ do {
         alert ("Debes ingresar un número entre el 0 y el 100");
         continue;
     }
-
     if (numeroUsuario < numeroMagico) {
         alert ("¡Número incorrecto! prueba nuevamente. Le dicen la Pulga");
         intentos--;
