@@ -26,9 +26,15 @@ const mostrarPrendas = (prendasDeVestir) => {
     for (const prendas of prendasDeVestir) {
         texto += `Producto: ${prendas.producto}\nTalle: ${prendas.talle}\nColor: ${prendas.color}\nStock: ${prendas.stock}\n\n`
     }
-
+   
     return texto
+    
 }
+
+// metodo sort ordenando el stock de menor a mayor
+prendasDeVestir.sort((a, b) => {
+    return a.stock - b.stock
+});
 
 // Menú
 let opcion;
@@ -46,7 +52,8 @@ do {
         case 2: 
             alert ("Muchas Gracias! vuelva prontosss");
             break; 
-            
+
+    
         default: 
             alert("opción incorrecta");
             break;
