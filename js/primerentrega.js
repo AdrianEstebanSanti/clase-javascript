@@ -115,8 +115,15 @@ function entregarPedido (mensaje, precio,) {
     alert (`muchas gracias por su compra, ${mensaje}, el total de la compra es ${precio}, con el envio incluido`);
     cobrar(precio);
 
+    const compraJS = JSON.stringify(entregarPedido);
+    localStorage.setItem("compra", compraJS);
+
+    
+
 }
 
-
+const compraLS = localStorage.getItem("compra");
+    const miscompras = JSON.parse(compraLS);
+    console.log (miscompras)
 
 
