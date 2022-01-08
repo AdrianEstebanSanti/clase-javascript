@@ -15,38 +15,42 @@
 <body class="bg-black">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid col-sm-4 col-md-1 col-lg-1 justify-content-center">
+            <a class="navbar-brand " href="#store">
+              <img src="./logo/v1057-element-19.jpg" alt="" width="80"  class="d-inline-block">
+            </a>
+          </div>
             <div class="container-fluid d-flex justify-content-center">
+              
                 <div class="column text-center">
-                    <a class="navbar-brand text-danger fw-bold" href="#">AS Clothing Store</a>
+                    <a class="navbar-brand text-danger fw-bold" href="index.html">AS Clothing Store</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                       <ul class="navbar-nav">
                         <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Ropa y Calzados</a>
+                          <a class="nav-link" href="#store">Ropa y Calzados</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Accesorios</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Shop</a>
+                          <a class="nav-link" href="#carrito">Shop</a>
                         </li>
                       </ul>
                     </div>
                  </div>
             </div>
           </nav>
+    </header>
 
-          <main>
+  <main>
               <div class="container my-5">
-                  <div class="row align-items-center">
-                    <div class="col-4">
-                        <h1 class="text-light border-bottom w-100">AS Clothing Store</h1>
-                        <p class="text-danger">Ropa formal e informal masculina</p>
+                  <div class="row align-items-center row-cols-1 row-cols-md-2">
+                    <div class=" col ">
+                        <h1 class="text-light fw-bold border-bottom w-50">AS Clothing Store</h1>
+                        <p class="text-danger fst-italic">Ropa formal e informal masculina</p>
                     </div>
 
                       <div id="carouselExampleControls" class="carousel slide col" data-bs-ride="carousel">
@@ -70,120 +74,168 @@
                   </div>   
               </div>
 
-              <div id="productos">
-               
+          
+            <div class="container store " id="store">
+              
 
-              </div>
-
-          <section class="store">
-            <div class="container">
-              <div class="items">
-
-                <div class="row">
-                  <div class="col-12 col-md-6">
-                    <div class="card mb-4" style="width: 18rem;">
-                      <img src="./public/remera.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title text-center">Remera</h5>
-                        <p class="card-text">Remera Programador Verde. Algodón</p>
-                        <h4 class="card-price">$4.000</h4>
-                        <a href="#" class="btn btn-primary addToCart">Comprar</a>
-                      </div>
+               <div class="row  mb-5 mt-5 row-cols-1 row-cols-md-4 g-4 ">
+                <div class="col " id="hover1">
+                  <div class="card mt-3 mb-4 align-items-center text-center"> 
+                    <img src="./public/remera.jpg" class="card-img-top rounded" width="160" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Remera</h5>
+                      <p class="card-text">Remera Programador Verde. Algodón</p>
+                      <h4 class="card-price">$4.000</h4>
+                      <button class="btn btn-primary addToCart">Comprar</button>
                     </div>
                   </div>
-                 
-                  <div class="col-12 col-md-6">
-                    <div class="card mb-4" style="width: 18rem;">
-                      <img src="./public/jeans.jpg" class="card-img-top" alt="...">
-                       <div class="card-body">
-                         <h5 class="card-title text-center">Jeans</h5>
-                         <p class="card-text">Jeans Wrangler</p>
-                         <h4 class="card-price">$10.000</h4>
-                         <a href="#" class="btn btn-primary addToCart">Comprar</a>
-                       </div>
-                     </div> 
-                  </div>
                 </div>
-
-                <div class="row">
-                  <div class="col-12 col-md-6">
-                    <div class="card mb-4" style="width: 18rem;">
+               
+                <div class="col " id="hover2">
+                  <div class="card mt-3 mb-4 text-center">
+                    <img src="./public/jeans.jpg" class="card-img-top" width="160" alt="...">
+                     <div class="card-body">
+                       <h5 class="card-title text-center">Jeans Hombre</h5>
+                       <p class="card-text">Jeans Wrangler - Color Gris o azul</p>
+                       <h4 class="card-price">$10.000</h4>
+                       <button class="btn btn-primary addToCart">Comprar</button>
+                     </div>
+                   </div> 
+                </div>
+              
+                
+                  <div class="col"id="hover3">
+                    <div class="card mt-3 mb-4 text-center" width="160";>
                       <img src="./public/Zapatillas_Grand_Court_(UNISEX)_Blanco_EF0103_01_standard.jpg" class="card-img-top" alt="...">
                        <div class="card-body">
                          <h5 class="card-title text-center">Zapatillas Adidas</h5>
-                         <p class="card-text">Grand Court Blanca</p>
+                         <p class="card-text">Grand Court Blanca Urbana -varios talles </p>
                          <h4 class="card-price">$20.000</h4>
-                         <a href="#" class="btn btn-primary addToCart">Comprar</a>
+                         <button class="btn btn-primary addToCart">Comprar</button>
                        </div>
                      </div> 
                   </div>
 
-                  <div class="col-12 col-md-6">
-                    <div class="card mb-4" style="width: 18rem;">
+                  <div class="col" id="hover4">
+                    <div class="card mt-3 mb-4 text-center " width="160">
                       <img src="./public/camisa.jpg" class="card-img-top" alt="...">
                        <div class="card-body">
                          <h5 class="card-title text-center">Camisa</h5>
-                         <p class="card-text">Camisa manga larga </p>
+                         <p class="card-text">Camisa manga larga rayas - Wrangler</p>
                          <h4 class="card-price">$5.000</h4>
-                         <a href="#" class="btn btn-primary addToCart">Comprar</a>
+                         <button class="btn btn-primary addToCart">Comprar</button>
                        </div>
                      </div> 
                   </div>
+                
                 </div>
-                  
-              </div>
+
             </div> 
-          </section>
+          
 
           <!-- START SECTION SHOPPING CART -->
-    <section class="shopping-cart">
+    <section class="shopping-cart mt-5 pt-4 mb-2" id="carrito">
       <div class="container">
-          <h1 class="text-center">CARRITO</h1>
-          <hr>
-          <div class="row">
-              <div class="col-6">
-                  <div class="shopping-cart-header">
-                      <h6>Producto</h6>
+            <h1 class="text-center text-white">CARRITO DE COMPRAS</h1>
+            <hr>
+            <div class="row">
+                  <div class="col-6 mb-2">
+                      <div class="shopping-cart-header text-white">
+                          <h6>Producto</h6>
+                      </div>
                   </div>
-              </div>
-              <div class="col-2">
-                  <div class="shopping-cart-header">
-                      <h6 class="text-truncate">Precio</h6>
+                  <div class="col-2">
+                      <div class="shopping-cart-header text-white">
+                          <h6 class="text-truncate">Precio</h6>
+                      </div>
                   </div>
-              </div>
-              <div class="col-4">
-                  <div class="shopping-cart-header">
-                      <h6>Cantidad</h6>
+                  <div class="col-4">
+                      <div class="shopping-cart-header text-white">
+                          <h6>Cantidad</h6>
+                      </div>
                   </div>
-              </div>
-          </div>
+            </div>
           <!-- ? START SHOPPING CART ITEMS -->
-          <div class="shopping-cart-items shoppingCartItemsContainer">
+          <div class="shopping-cart-items shoppingCartItemsContainer text-white">
           </div>
+
           <!-- ? END SHOPPING CART ITEMS -->
           <div class="jqueryBtn">
 
           </div>
 
-          <table class="table">
-            <thead>
-              <tr class="table-dark">
-                <th scope="col">#</th>
-                <th scope="col">Tipo de cambio (ARG)</th>
-                <th scope="col">Compra</th>
-                <th scope="col">Venta</th>
-              </tr>
-            
+           <!-- START TOTAL -->
+           <div class="row ">
+              <div class="col-12 ">
+                  <div class="shopping-cart-total d-flex align-items-center text-white">
+                      <p class="mb-0">Total</p>
+                      <p class="mx-4 mb-0 shoppingCartTotal">0$</p>
+                      <div class="toast  bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                          data-delay="2000">
+                          <div class="toast-header">
+                              <span>✅</span>
+                              <strong class="mx-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                              <button type="button" class="mx-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="toast-body text-white">
+                              Se aumentó correctamente la cantidad
+                          </div>
+                      </div>
+                     
+                  </div>
+              </div>
+          </div>
+
+          <!-- START MODAL COMPRA -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Compra</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Su pedido llegará pronto. Muchas gracias!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END MODAL COMPRA -->
+
+
+      </div>
+    </section>
+
+          <!-- END TOTAL -->
+      <section class="container table-responsive-sm dolarapi mt-5 mb-5  ">
+        <table class="table mb-5 ">
+          <thead>
+            <tr class="table-dark">
+              <th scope="col">#</th>
+              <th scope="col">Tipo de cambio (ARG)</th>
+              <th scope="col">Compra</th>
+              <th scope="col">Venta</th>
+            </tr>
+          
             <tbody class="tbody">
-              
             </tbody>
           </thead>
-          </main>
+        </table>
+      </section>
+          
+  </main>
 
-          <footer>
-
-          </footer>
-    </header>
+            <!-- START FOOTER -->
+        <footer class="bg-dark p-3 mt-5">
+               <p class="text-center m-0 text-muted">© 2022 - AS Clothing Store - Mendoza - Argentina</p>
+        </footer>
+           <!-- END FOOTER -->
+   
     
 
     <!-- <script src="./js/variables.js"></script> -->
@@ -197,7 +249,8 @@
     <!-- <script src="./js/segunda-entrega.js"></script> -->
     <!-- <script src="./js/jQuery.js"></script> -->
     <!-- <script src="./js/ajax.js"></script> -->
-    <script src="./js/tercer-entrega.js"></script>
+    <!-- <script src="./js/tercer-entrega.js"></script> -->
+    <script src="./js/entregaFinal.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
