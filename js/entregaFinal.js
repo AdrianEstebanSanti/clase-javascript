@@ -32,6 +32,7 @@ function addToCartClicked(event) {
 
     addItemLocal(newItem);
     addCardToShoppingCart(cardTitle, cardPrice, cardImage);
+    
 };
 //END FUNCION QUE RECIBE EL EVENTO CLICK DE LOS ITEMS SELECCIONADOS
 
@@ -47,6 +48,7 @@ function addCardToShoppingCart(cardTitle, cardPrice, cardImage) {
                 elementQuantity.value++;
                 $('.toast').toast('show')
                 updateShoppingCartTotal();
+                addLocalStorage();
                 return;
             };
         };
@@ -78,7 +80,7 @@ function addCardToShoppingCart(cardTitle, cardPrice, cardImage) {
 
     shoppingCartRow.innerHTML = shoppingCartContent;
     shoppingCartItemsContainer.append(shoppingCartRow);
-    addLocalStorage();
+    
 
 
     // EVENTO CLICK BOTON DELETE
@@ -90,6 +92,7 @@ function addCardToShoppingCart(cardTitle, cardPrice, cardImage) {
     .addEventListener ('change',quantityChange);
 
     updateShoppingCartTotal();
+    addLocalStorage();
 };
 
 
@@ -125,7 +128,7 @@ $(document).ready(function(){
                     updateShoppingCartTotal() 
                 });   
                 
-                updateShoppingCartTotal()
+                updateShoppingCartTotal();
             };  
         
         $('.buttonDelete').click(function() {
@@ -184,6 +187,7 @@ function removeShoppingCartItem (event){
     buttonClicked.closest('.shoppingCartItem').remove();
     
     updateShoppingCartTotal();
+   
 };
 // END FUNCION QUE RECIBE EL EVENTO CLICK Y REMUEVE ITEMS DEL CARRITO
    
@@ -195,10 +199,9 @@ function quantityChange(event){
         input.value = 1
     };
     updateShoppingCartTotal();
+    
 };
 // END FUNCION QUE RECIBE EL EVENTO CHANGE 
-
-
 
 
 
@@ -206,20 +209,18 @@ function quantityChange(event){
 function addItemLocal(newItem) {
 
     carro.push(newItem); 
+   
 };
 
 
 // START LOCALSTORAGE
-//localStorage setItem ARRAY CARRO
+//localStorage setItem y getItem ARRAY CARRO
 function addLocalStorage (){
-    localStorage.setItem('compra', JSON.stringify(carro))
+    localStorage.setItem('compra', JSON.stringify(carro));
+    carro = JSON.parse(localStorage.getItem('compra')) 
 };
-
-//localStorage getItem JQUERY ARRAY CARRO
-$(function() {
-    const storage = JSON.parse(localStorage.getItem(carro));
-});
 // END LOCALSTORAGE
+
 
 
 
